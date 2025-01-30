@@ -9,7 +9,7 @@ A powerful WhatsApp bot built with Baileys Multi-Device.
 ## 🚀 Installation  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/YourUsername/whatsapp-md-bot.git
+   git clone https://github.com/Fakezak/Zak-MD
    ```
 2. Install dependencies:  
    ```bash
