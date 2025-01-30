@@ -1,0 +1,13 @@
+{
+  "name": "whatsapp-md-bot",
+  "version": "1.0.0",
+  "description": "A WhatsApp MD bot using Baileys",
+  "main": "index.js",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0",
+    "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
