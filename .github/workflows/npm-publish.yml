@@ -1,0 +1,31 @@
+name: Deploy zak md to Termux
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when code is pushed to the 'main' branch
+  pull_request:
+    branches:
+      - main  # Optionally, trigger on pull requests to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Use Ubuntu for running the workflow
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Adjust this version as necessary for your bot
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Start WhatsApp Bot
+        run: |
+          # Run the bot directly on Termux
+          npm start   # Replace with your command to start the bot
